@@ -28,6 +28,7 @@ nameVirtualHost 192.168.1.112:80
     AllowOverride All
     Require all granted
 </Directory>
+
 ```
 # 截图：
-![My centos virtual](http://7xq5ds.com1.z0.glb.clouddn.com/mycentos7%20virtual.png?imageView2/2/w/1800/h/1800/q/100|watermark/2/text/Rmh555qE5Y2a5a6i/font/6buR5L2T/fontsize/550/fill/I0ZGMDAwMA==/dissolve/100/gravity/SouthEast/dx/0/dy/5)
+![My centos virtual](http://7xq5ds.com1.z0.glb.clouddn.com/MycentosVirtual.jpg)
