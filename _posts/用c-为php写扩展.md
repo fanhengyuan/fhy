@@ -8,18 +8,18 @@ tags: "c++"
 ## 准备工作：
 
 1. 下载PHP源码 http://www.php.net/downloads
-由于博主的php版本为5.4比较老测试扩展时出现各种问题，故这里编译安装目前最新版 php-7.1.0.tar.gz
-2. 解压后，源码放到 /root/source/php-7.1.0
-3. 安装目录：/usr/local/php7
-4. 开始安装，配置 /usr/local/php7/etc/php.ini 的路径，方便以后进行个性化配置
+由于博主的php版本为5.4比较老测试扩展时出现各种问题，故这里编译安装目前最新版 `php-7.1.0.tar.gz`
+2. 解压后，源码放到 `/root/source/php-7.1.0`
+3. 安装目录：`/usr/local/php7`
+4. 开始安装，配置 `/usr/local/php7/etc/php.ini` 的路径，方便以后进行个性化配置
 5. 扩展名称：fhy
 6. 扩展函数：fhy_say()，这个函数只返回一个"Hello world!" 字符串
 7. 扩展可运行在 win32 系统，也运行在类unix系统，但是需要编译不同的文件，这里只介绍　GNU/Linux 下的操作。
 
 ## 开始编写扩展：
 
-1. 创建要实现的函数列表文件 /root/source/fhy.proto，内容如下：
-使用ext_skel脚本加入 --proto=/root/source/fhy.proto 参数可直接构建所需函数
+1. 创建要实现的函数列表文件 `/root/source/fhy.proto` 内容如下：
+使用ext_skel脚本加入 `--proto=/root/source/fhy.proto` 参数可直接构建所需函数
 ```c
 string fhy_say()
 ```
@@ -104,7 +104,7 @@ fi
 
 这个文件中 dnl 是注释符，其之后的字串是解释上下文。
 
-修改 fhy.c 文件重名为 fhy.cpp（用c++嘛所以改成cpp了）
+修改 `fhy.c` 文件重名为 `fhy.cpp`（用c++嘛所以改成cpp了）
 
 4.1. 加入需要的C++ string 头文件，如下：
 
@@ -277,8 +277,8 @@ Don't forget to run 'make test'.
 -rwxr-xr-x. 1 root root 54371 Dec  8 11:25 fhy.so
 ```
 
-将fhy.so 放到php扩展目录 /usr/local/php7/lib/php/extensions/no-debug-non-zts-20160303/
-php.ini 引入扩展文件
+将`fhy.so` 放到php扩展目录 `/usr/local/php7/lib/php/extensions/no-debug-non-zts-20160303/`
+`php.ini` 引入扩展文件
 
 ## 测试扩展
 
