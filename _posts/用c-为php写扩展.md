@@ -1,6 +1,8 @@
 title: 用c++为php编写扩展
 date: 2016-12-08 10:52:40
 tags: "c++"
+top: true
+sticky: 1
 ---
 <Excerpt in index | 首页摘要> 
 用c/c++为php编写动态链接库<!-- more -->
